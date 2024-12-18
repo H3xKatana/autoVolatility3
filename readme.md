@@ -31,7 +31,7 @@ pip install -e .[dev]
 
 ### Basic Usage
 ```bash
-python3 volatility_forensics.py -f /path/to/memory/dump.dmp
+python3 autovol3.py -f /path/to/memory/dump.dmp
 ```
 
 ### Advanced Options
@@ -43,20 +43,20 @@ python3 volatility_forensics.py -f /path/to/memory/dump.dmp
 
 ```bash
 # Minimal scan
-python3 volatility_forensics.py -f memory.dmp -s minimal
+python3 autovol3.py -f memory.dmp -s minimal
 
 # Full scan
-python3 volatility_forensics.py -f memory.dmp -s full
+python3 autovol3.py -f memory.dmp -s full
 ```
 
 #### Custom Output Directory
 ```bash
-python3 volatility_forensics.py -f memory.dmp -o /custom/output/path
+python3 autovol3.py -f memory.dmp -o /custom/output/path
 ```
 
 #### Custom Volatility Path
 ```bash
-python3 volatility_forensics.py -f memory.dmp --volatility-path /custom/vol.py
+python3 autovol3.py -f memory.dmp --volatility-path /custom/vol.py
 ```
 
 ## Scan Type Details
