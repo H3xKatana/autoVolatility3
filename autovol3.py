@@ -64,7 +64,7 @@ def detect_memory_dump_os(volatility_path, memory_image):
         print(f"Error detecting memory dump OS: {e}")
         return "unknown"
 
-def run_volatility_analysis(volatility_path, memory_image, scan_type='normal', output_dir=None):
+def run_volatility_analysis_windows(volatility_path, memory_image, scan_type='normal', output_dir=None):
     """
     Run Volatility analysis with specified scan type.
     
@@ -191,13 +191,19 @@ def main():
     
     # Run analysis
     try:
-        output_dir = run_volatility_analysis(
-            args.volatility_path, 
-            args.memory_file, 
-            args.scan_type, 
-            args.output_dir
-        )
-        print(f"\nForensic analysis complete. Detailed results are in: {output_dir}")
+        if detected_os == 'windows' :
+            output_dir = run_volatility_analysis_windows(
+                args.volatility_path, 
+                args.memory_file, 
+                args.scan_type, 
+                args.output_dir
+            )
+            print(f"\nForensic analysis complete. Detailed results are in: {output_dir}")
+        elif detected_os == 'linux' :
+            print("linux support will be added soon ")
+        else :
+            print("mac support will be added soon ")
+
     
     except Exception as e:
         print(f"An error occurred during analysis: {e}")
