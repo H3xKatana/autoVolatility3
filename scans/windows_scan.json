@@ -1,0 +1,98 @@
+{
+    "minimal": [
+      "windows.info",
+      "windows.pslist",
+      "windows.pstree",
+      "windows.cmdline"
+    ],
+    "normal": [
+      "windows.info",
+      "windows.pslist",
+      "windows.pstree",
+      "windows.psxview",
+      "windows.modules",
+      "windows.netscan",
+      "windows.cmdline",
+      "windows.malfind",
+      "windows.dlllist",
+      "windows.sockets"
+    ],
+    "full": [
+      "windows.info",
+      "windows.pslist",
+      "windows.pstree",
+      "windows.sessions",
+      "windows.modules",
+      "windows.dlllist",
+      "windows.filescan",
+      "windows.netscan",
+      "windows.cmdline",
+      "windows.sockets",
+      "windows.malfind",
+      "windows.getsids",
+      "windows.scheduled_tasks",
+      "windows.registry.hivelist",
+      "windows.registry.printkey",
+      "windows.handles",
+      "windows.svcscan",
+      "windows.netstat",
+      "windows.privileges",
+      "windows.vaddump"
+    ],
+    "triage": [
+      "windows.info",
+      "windows.pslist",
+      "windows.pstree",
+      "windows.netscan",
+      "windows.malfind"
+    ],
+    "malware": [
+      "windows.malfind",
+      "windows.dlllist",
+      "windows.handles",
+      "windows.svcscan",
+      "windows.callbacks",
+      "windows.modules",
+      "windows.driverscan",
+      "windows.ssdt",
+      "windows.psxview",
+      "windows.privs"
+    ],
+    "foreniscs": [
+      "windows.info",
+      "windows.pslist",
+      "windows.pstree",
+      "windows.filescan",
+      "windows.shimcache",
+      "windows.shellbags",
+      "windows.userassist",
+      "windows.timeline",
+      "windows.cmdline",
+      "windows.envars",
+      "windows.verinfo",
+      "windows.handles",
+      "windows.sessions",
+      "windows.vadinfo",
+      "windows.privileges"
+    ],
+    "network": [
+      "windows.netscan",
+      "windows.netstat",
+      "windows.network_map",
+      "windows.sockets",
+      "windows.connections",
+      "windows.dns_cache",
+      "windows.hosts",
+      "windows.arp"
+    ],
+    "registry": [
+      "windows.registry.hivelist",
+      "windows.registry.hivescan",
+      "windows.registry.printkey",
+      "windows.registry.userassist",
+      "windows.registry.shellbags",
+      "windows.registry.shimcache",
+      "windows.registry.services",
+      "windows.registry.startup"
+    ]
+  }
