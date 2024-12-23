@@ -14,7 +14,7 @@ def main():
     parser.add_argument('-o', '--output-dir', help='Output directory')
     parser.add_argument('--volatility-path', default="/opt/volatility3/vol.py",
                       help='Volatility 3 executable path')
-    parser.add_argument('-t','--threads', type=int, default=7,
+    parser.add_argument('-t','--threads', type=int, default=5,
                       help='max number of threads')
     
     args = parser.parse_args()
