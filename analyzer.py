@@ -38,7 +38,9 @@ class VolatilityAnalyzer:
         if not output_dir:
             timestamp = time.strftime('%Y-%m-%d_%H:%M:%S')
             output_dir = Path('/tmp') / f'volatility_analysis_{timestamp}'
-
+        else:
+            output_dir = Path(output_dir)  # Ensure output_dir is a Path object
+        
         output_dir.mkdir(parents=True, exist_ok=True)  # Create directory recursively
         return output_dir
 
